@@ -1,0 +1,22 @@
+{% extends 'base_layout.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+{% block content %}
+  <head>
+    <meta charset="utf-8">
+    <title>Главная</title>
+    <link rel="stylesheet" href="{% static 'homepage-styles.css' %}">
+  </head>
+  <body>
+    <section class="hero">
+      <div class="site-description">
+        <h2>Совершайте покупки с большой разницей в цене!</h2>
+        <p>Данный сервис предоставляет возможность мониторинга и сравнения цен, в крупнейших магазинах бытовой техники на территории РФ.</p>
+        <br>
+        <a href="{% url 'about' %}" class="tag-about">Узнать больше!</a>
+      </div>
+    </section>
+    <span class="created-by"><p>Created by Xassales</p></span>
+  </body>
+{% endblock %}
